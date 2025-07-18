@@ -1,0 +1,9 @@
+{
+  "project_name": "My Python Project",
+  "project_slug": "my_python_project",
+  "description": "A short description of the project.",
+  "author_name": "Your Name",
+  "email": "you@example.com",
+  "version": "0.1.0",
+  "python_version": "3.11"
+}

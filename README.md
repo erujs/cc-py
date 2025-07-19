@@ -62,7 +62,7 @@ cookiecutter gh:erujs/cookiecutter-python-template
 Sample prompt answers:
 
 - project_slug: project-py
-- package_name: project_py
+- package_name: project
 - username: erujs
 - email: jerus@example.com
 - project_description: A Python project

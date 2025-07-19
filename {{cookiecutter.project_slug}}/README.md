@@ -1,8 +1,9 @@
-# {{cookiecutter.project_name}}
+# {{ cookiecutter.project_slug }}
 
-{{cookiecutter.description}}
+{{ cookiecutter.project_description }}
 
-## Installation
+## 🚀 Usage
 
 ```bash
-pip install .
+pip install -e .
+{{ cookiecutter.project_slug }}

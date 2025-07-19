@@ -1,24 +1,18 @@
-# Byte-compiled / cache files
+# Python
 __pycache__/
 *.py[cod]
-*.pyo
-*.pyd
+*.egg-info/
+*.log
 
-# Virtual environments
-.venv/
-env/
-venv/
+# Build
+build/
+dist/
 
-# Environment variables
+# Environment
 .env
-*.env
+.venv/
+.env.*
 
-# IDEs
+# VSCode or IDEs
 .vscode/
 .idea/
-
-# Tests
-.pytest_cache/
-
-# Installer logs
-pip-log.txt

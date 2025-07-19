@@ -10,9 +10,8 @@ Great for CLI tools, libraries, or general-purpose Python apps.
 - 📦 Standard project layout
 - 🖥 CLI entry point (`your_project` or `python -m your_project`)
 - 🧪 Pytest-compatible `tests/` folder
-- 📜 `setup.py` with setuptools
-- 📋 `requirements.txt`
-- 📄 Auto-generated `README.md` and `.gitignore`
+- 📄 Uses `pyproject.toml` with modern `setuptools`
+- 📜 Auto-generated `README.md`, `.gitignore`, and `LICENSE`
 - 🔧 Fully customizable via Cookiecutter prompts
 
 ---
@@ -33,25 +32,25 @@ cookiecutter gh:erujs/cookiecutter-python-template
 
 You’ll be prompted to enter:
 
-- Project name
-- Slug (import-safe name)
-- Author info
-- Description
-- Python version
+- project_slug (project folder name and CLI name)
+- package_name (Python importable package)
+- username
+- project_description
+- license (e.g. MIT)
 
 ## Generated Project Structure
 
 ```
 your_project/
-├── your_project/
+├── your_package/
 │   ├── __init__.py
 │   └── main.py
 ├── tests/
-│   └── test_main.py
+│   └── test_basic.py
 ├── .gitignore
-├── README.md
-├── setup.py
-└── requirements.txt
+├── LICENSE
+├── pyproject.toml
+└── README.md
 ```
 
 ## Example
@@ -62,19 +61,19 @@ cookiecutter gh:erujs/cookiecutter-python-template
 
 Sample prompt answers:
 
-- project_name: Nudl
-- project_slug: nudl
-- author_name: Jerus
+- project_slug: nudl-py
+- package_name: nudl_py
+- username: erujs
 - email: jerus@example.com
-- description: A Python media downloader
-- python_version: 3.10
+- project_description: A Python media downloader
+- license: MIT
 
 Then:
 
 ```
-cd nudl
-pip install .
-nudl  # or python -m nudl
+cd nudl-py
+pip install -e .
+nudl-py
 ```
 
 ## License

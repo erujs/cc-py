@@ -1,4 +1,4 @@
-# 🧱 Cookiecutter Python Template
+# cc-py
 
 A minimal, flexible Python project template using [Cookiecutter](https://github.com/cookiecutter/cookiecutter).  
 Great for CLI tools, libraries, or general-purpose Python apps.
@@ -27,7 +27,7 @@ pip install cookiecutter
 Then create a new project using this template:
 
 ```
-cookiecutter gh:erujs/cookiecutter-python-template
+cookiecutter gh:erujs/cc-py
 ```
 
 You’ll be prompted to enter:
@@ -61,11 +61,11 @@ cookiecutter gh:erujs/cookiecutter-python-template
 
 Sample prompt answers:
 
-- project_slug: nudl-py
-- package_name: nudl_py
+- project_slug: project-py
+- package_name: project_py
 - username: erujs
 - email: jerus@example.com
-- project_description: A Python media downloader
+- project_description: A Python project
 - license: MIT
 
 Then:
@@ -73,7 +73,7 @@ Then:
 ```
 cd nudl-py
 pip install -e .
-nudl-py
+project-py
 ```
 
 ## License

@@ -56,7 +56,7 @@ your_project/
 ## Example
 
 ```
-cookiecutter gh:erujs/cookiecutter-python-template
+cookiecutter gh:erujs/cc-py
 ```
 
 Sample prompt answers:

@@ -7,3 +7,4 @@
 ```bash
 pip install -e .
 {{ cookiecutter.project_slug }}
+```

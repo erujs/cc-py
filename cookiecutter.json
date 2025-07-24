@@ -1,7 +1,10 @@
 {
-  "project_slug": "my-tool",
-  "package_name": "my_tool",
-  "project_description": "A short description of the project.",
+  "project_type": ["cli", "fastapi"],
+  "project_name": "My Project",
+  "project_slug": "my_project",
+  "package_name": "my_package",
   "username": "yourusername",
+  "email": "your@email.com",
+  "project_description": "A Python project",
   "license": "MIT"
 }

@@ -1,10 +1,8 @@
 {
-  "project_name": "My Project",
   "project_slug": "my_project",
   "package_name": "my_package",
   "username": "yourusername",
   "email": "you@example.com",
   "project_description": "A Python project",
-  "license": "MIT",
-  "project_type": ["cli", "fastapi"]
+  "license": "MIT"
 }

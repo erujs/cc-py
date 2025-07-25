@@ -1,3 +1,0 @@
-cli/*
-fastapi/*
-{{cookiecutter.project_slug}}/.placeholder

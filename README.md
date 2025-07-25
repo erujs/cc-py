@@ -1,15 +1,12 @@
 # cc-py
 
 A minimal, flexible Python project template using [Cookiecutter](https://github.com/cookiecutter/cookiecutter).  
-Now supports both **CLI tools** and **FastAPI** apps!
 
 ---
 
 ## 🚀 Features
 
-- Choose between:
-  - 🖥 CLI application template
-  - ⚡ FastAPI application template
+- 🖥 CLI application template
 - 📦 Standard Python layout with `pyproject.toml`
 - 🧪 Built-in test structure for both types
 - 🛠 CLI entry point (`python -m your_package` or `your_project`)
@@ -34,8 +31,6 @@ cookiecutter gh:erujs/cc-py
 
 You’ll be prompted to enter:
 
-- project_type: cli or fastapi
-- project_name: Name of your project
 - project_slug: Folder and CLI name
 - package_name: Python package name
 - username: Your GitHub/author name
@@ -60,21 +55,6 @@ your_project/
 └── README.md
 ```
 
-### ⚡ FastAPI Example:
-
-```bash
-your_project/
-├── app/
-│   ├── main.py
-│   ├── api/
-│   │   └── v1/endpoints.py
-│   ├── core/config.py
-├── tests/
-├── pyproject.toml
-├── README.md
-└── .gitignore
-```
-
 ## Example
 
 ### For CLI project:
@@ -85,16 +65,6 @@ cookiecutter gh:erujs/cc-py
 cd your_project
 pip install -e .
 your_project  # or: python -m your_package
-```
-
-### For FastAPI project:
-
-```bash
-cookiecutter gh:erujs/cc-py
-# Select: fastapi
-cd your_project
-pip install -e .
-uvicorn app.main:app --reload
 ```
 
 ## License

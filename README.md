@@ -1,50 +1,59 @@
 # cc-py
 
-A minimal, flexible Python project template using [Cookiecutter](https://github.com/cookiecutter/cookiecutter).  
+Python Project Template ~ A scaffolding tool for quickly creating Python project structures.  
 
----
+## Dependencies
 
-## 🚀 Features
+Ensure you have the following dependencies installed (if you haven’t already):
 
-- 🖥 CLI application template
-- 📦 Standard Python layout with `pyproject.toml`
-- 🧪 Built-in test structure for both types
-- 🛠 CLI entry point (`python -m your_package` or `your_project`)
-- 📜 Auto-generated `README.md`, `.gitignore`, and `LICENSE`
-- 🔧 Fully customizable via Cookiecutter prompts
+- **Python 3.8+** - required to develop and run the project
+- **pipx** (recommended) – for installing and running the generated CLI apps in isolated environments
+- **Cookiecutter** – used to generate new projects from this template
 
----
+## Installation
 
-## 📦 Usage
+You can install using `pipx` (recommended) or clone the repo directly:
 
-First, install Cookiecutter (if you haven’t already):
-
+### Option 1: Install with pipx
 ```bash
-pip install cookiecutter
+pipx install git+https://github.com/erujs/cc-py.git
 ```
 
-Then create a new project using this template:
+### Option 2: Clone the repo
+```bash
+pip install -e .
+```
+
+## Usage
 
 ```bash
 cookiecutter gh:erujs/cc-py
+# Generate a new Python project using this scaffolding tool.
+# You’ll be prompted to provide:
+#
+# - project_slug (python-project): Name of the project folder and CLI entry point
+# - package_name (package): Name of the Python package/module
+# - username (yourusername): Your GitHub username or author name
+# - project_description (description): A short one-line project description
+# - license (MIT): License type for the project
 ```
 
-You’ll be prompted to enter:
+```bash
+# After project generation
+cd <project-slug>
 
-- project_slug: Folder and CLI name
-- package_name: Python package name
-- username: Your GitHub/author name
-- email: Contact email
-- project_description: One-liner description
-- license (e.g. MIT)
+# Install the project in editable mode
+pip install -e .
 
-## Generated Project Structure
+# Run the CLI (replace <project-slug> with your chosen name)
+<project-slug>
+```
 
-### 🖥 CLI Example:
+### Generated CLI Project Structure:
 
 ```bash
-your_project/
-├── your_package/
+python-project/
+├── package/
 │   ├── __init__.py
 │   └── main.py
 ├── tests/
@@ -55,17 +64,8 @@ your_project/
 └── README.md
 ```
 
-## Example
-
-### For CLI project:
-
-```bash
-cookiecutter gh:erujs/cc-py
-# Select: cli
-cd your_project
-pip install -e .
-your_project  # or: python -m your_package
-```
-
 ## License
-MIT — feel free to use, modify, and share.
+MIT — do whatever you want with it.
+
+✨ Happy coding!
+If you find this project useful, a ⭐ on the repo is always appreciated!

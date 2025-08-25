@@ -16,3 +16,7 @@ dist/
 # VSCode or IDEs
 .vscode/
 .idea/
+
+# OS-specific
+.DS_Store
+Thumbs.db

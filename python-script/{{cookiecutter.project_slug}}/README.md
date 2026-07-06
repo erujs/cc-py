@@ -13,7 +13,7 @@ Ensure you have the following installed before getting started:
 
 ### Step 1: Clone the generated project
 ```bash
-git clone https://github.com/your-username/{{ cookiecutter.project_slug }}.git
+git clone https://github.com/{{ cookiecutter.author }}/{{ cookiecutter.project_slug }}.git
 cd {{ cookiecutter.project_slug }}
 ```
 
@@ -25,7 +25,7 @@ source .venv/bin/activate
 
 ### Step 3: Install the project
 ```bash
-pip install -e .
+pip install -e ".[dev]"
 ```
 
 ## Usage
@@ -46,6 +46,7 @@ python -m {{ cookiecutter.project_slug }}.main
 │   ├── __init__.py
 │   └── main.py
 ├── tests/
+│   ├── __init__.py
 │   └── test_main.py
 ├── .gitignore
 ├── pyproject.toml
@@ -57,9 +58,6 @@ python -m {{ cookiecutter.project_slug }}.main
 ```bash
 pytest
 ```
-
-## License
-MIT — do whatever you want with it.
 
 ✨ Happy coding!
 If you find this project useful, a ⭐ on the repo is always appreciated!

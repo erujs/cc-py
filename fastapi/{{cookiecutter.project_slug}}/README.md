@@ -13,7 +13,7 @@ Ensure you have the following installed before getting started:
 
 ### Step 1: Clone the generated project
 ```bash
-git clone https://github.com/your-username/{{ cookiecutter.project_slug }}.git
+git clone https://github.com/{{ cookiecutter.author }}/{{ cookiecutter.project_slug }}.git
 cd {{ cookiecutter.project_slug }}
 ```
 
@@ -31,7 +31,7 @@ pip install -e ".[dev]"
 ## Usage
 
 ```bash
-uvicorn app.main:app --reload
+fastapi dev app/main.py
 ```
 
 API will be available at:
@@ -47,16 +47,21 @@ API will be available at:
 │   ├── __init__.py
 │   ├── main.py
 │   ├── core/
+│   │   ├── __init__.py
 │   │   └── cors.py
 │   ├── routers/
+│   │   ├── __init__.py
 │   │   └── example.py
 │   ├── schemas/
+│   │   ├── __init__.py
 │   │   └── example.py
 │   └── repositories/
+│       ├── __init__.py
 │       └── json_store.py
 ├── data/
 │   └── example.json
 ├── tests/
+│   ├── __init__.py
 │   └── test_health.py
 ├── .gitignore
 ├── pyproject.toml
@@ -80,9 +85,6 @@ CORS_RULES: dict[str, list[str]] = {
 ```bash
 pytest
 ```
-
-## License
-MIT — do whatever you want with it.
 
 ✨ Happy coding!
 If you find this project useful, a ⭐ on the repo is always appreciated!

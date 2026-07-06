@@ -35,8 +35,7 @@ cookiecutter gh:erujs/cc-py --directory fastapi
 cd <project-slug>
 python -m venv .venv
 source .venv/bin/activate
-pip install -e .          # python-script
-pip install -e ".[dev]"   # fastapi
+pip install -e ".[dev]"
 ```
 
 ✨ Happy coding!

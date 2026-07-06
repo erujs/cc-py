@@ -4,8 +4,7 @@ version = "0.1.0"
 description = ""
 requires-python = ">={{ cookiecutter.python_version }}"
 dependencies = [
-    "fastapi>=0.111",
-    "uvicorn[standard]>=0.30",
+    "fastapi[standard]>=0.111",
     "pydantic-settings>=2.3",
     "pydantic>=2.0",
 ]
@@ -22,3 +21,6 @@ build-backend = "setuptools.build_meta"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+
+[tool.setuptools.packages.find]
+include = ["app", "data"]

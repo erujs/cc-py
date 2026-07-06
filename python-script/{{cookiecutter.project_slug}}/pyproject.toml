@@ -5,6 +5,11 @@ description = ""
 requires-python = ">={{ cookiecutter.python_version }}"
 dependencies = []
 
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
+
 [project.scripts]
 {{ cookiecutter.project_slug }} = "{{ cookiecutter.project_slug }}.main:main"
 

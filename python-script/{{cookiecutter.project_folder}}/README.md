@@ -13,8 +13,8 @@ Ensure you have the following installed before getting started:
 
 ### Step 1: Clone the generated project
 ```bash
-git clone https://github.com/{{ cookiecutter.author }}/{{ cookiecutter._project_dashed }}.git
-cd {{ cookiecutter._project_dashed }}
+git clone https://github.com/{{ cookiecutter.author }}/{{ cookiecutter.project_folder }}.git
+cd {{ cookiecutter.project_folder }}
 ```
 
 ### Step 2: Create and activate a virtual environment
@@ -41,7 +41,7 @@ python -m {{ cookiecutter.project_slug }}.main
 ## Project Structure
 
 ```bash
-{{ cookiecutter._project_dashed }}/
+{{ cookiecutter.project_folder }}/
 ├── {{ cookiecutter.project_slug }}/
 │   ├── __init__.py
 │   └── main.py

@@ -1,5 +1,6 @@
 {
   "project_name": "My Script",
+  "project_folder": ["{{ cookiecutter.project_name.lower().replace(' ', '-') }}"],
   "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
   "author": "your-github-username",
   "python_version": ["3.11", "3.12", "3.10"]

@@ -13,8 +13,8 @@ Ensure you have the following installed before getting started:
 
 ### Step 1: Clone the generated project
 ```bash
-git clone https://github.com/{{ cookiecutter.author }}/{{ cookiecutter.__project_dashed }}.git
-cd {{ cookiecutter.__project_dashed }}
+git clone https://github.com/{{ cookiecutter.author }}/{{ cookiecutter._project_dashed }}.git
+cd {{ cookiecutter._project_dashed }}
 ```
 
 ### Step 2: Create and activate a virtual environment
@@ -42,7 +42,7 @@ API will be available at:
 ## Project Structure
 
 ```bash
-{{ cookiecutter.__project_dashed }}/
+{{ cookiecutter._project_dashed }}/
 ├── app/
 │   ├── __init__.py
 │   ├── main.py

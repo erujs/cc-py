@@ -1,0 +1,65 @@
+# {{ cookiecutter.project_name }}
+
+Built using [cc-py](https://github.com/erujs/cc-py) `python-script` template.
+
+## Dependencies
+
+Ensure you have the following installed before getting started:
+
+- **Python {{ cookiecutter.python_version }}+** - required to develop and run the project
+- **pytest** – for running tests
+
+## Setup
+
+### Step 1: Clone the generated project
+```bash
+git clone https://github.com/your-username/{{ cookiecutter.project_slug }}.git
+cd {{ cookiecutter.project_slug }}
+```
+
+### Step 2: Create and activate a virtual environment
+```bash
+python -m venv .venv
+source .venv/bin/activate
+```
+
+### Step 3: Install the project
+```bash
+pip install -e .
+```
+
+## Usage
+
+```bash
+# Run directly
+python -m {{ cookiecutter.project_slug }}.main
+
+# Or if installed
+{{ cookiecutter.project_slug }}
+```
+
+## Project Structure
+
+```bash
+{{ cookiecutter.project_slug }}/
+├── {{ cookiecutter.project_slug }}/
+│   ├── __init__.py
+│   └── main.py
+├── tests/
+│   └── test_main.py
+├── .gitignore
+├── pyproject.toml
+└── README.md
+```
+
+## Test
+
+```bash
+pytest
+```
+
+## License
+MIT — do whatever you want with it.
+
+✨ Happy coding!
+If you find this project useful, a ⭐ on the repo is always appreciated!

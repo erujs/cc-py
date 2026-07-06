@@ -19,14 +19,14 @@ pip install cookiecutter
 A plain Python 3 script/package with a basic CLI entry point and tests.
 
 ```bash
-cookiecutter gh:your-org/cc-py --directory python-script
+cookiecutter gh:erujs/cc-py --directory python-script
 ```
 
 ### fastapi
 A layered FastAPI service with routers, schemas, repositories, and per-route CORS enforcement.
 
 ```bash
-cookiecutter gh:your-org/cc-py --directory fastapi
+cookiecutter gh:erujs/cc-py --directory fastapi
 ```
 
 ## After Generation

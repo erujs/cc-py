@@ -20,7 +20,7 @@ class Rule:
 #   - http://localhost:3000  (Next.js dev server)
 CORS_RULES: dict[str, Rule] = {
     "/api/example": Rule(
-        origins=["http://localhost:3000", "http://localhost:5173"]
+        origins=["http://localhost:3000", "http://localhost:5173"],
         methods=["GET", "POST", "PUT", "DELETE"],
     ),
 }

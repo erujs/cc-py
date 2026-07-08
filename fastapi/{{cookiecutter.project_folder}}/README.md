@@ -48,7 +48,7 @@ API will be available at:
 │   ├── main.py
 │   ├── core/
 │   │   ├── __init__.py
-│   │   └── cors.py
+│   │   └── cors_middleware.py
 │   ├── routers/
 │   │   ├── __init__.py
 │   │   └── example.py
@@ -70,13 +70,19 @@ API will be available at:
 
 ## CORS
 
-`app/core/cors.py` restricts each route by origin per prefix in `CORS_RULES`.
+`app/core/cors_middleware.py` restricts each route by origin and methods per prefix in `CORS_RULES`.  
 Add an entry for every new router prefix you create:
 
 ```python
-CORS_RULES: dict[str, list[str]] = {
-    "/api/example": ["http://localhost:5173", "http://localhost:3000"],
-    "/api/your_new_route": ["http://localhost:5173"],
+CORS_RULES: dict[str, Rule] = {
+    "/api/example": Rule(
+        origins=["http://localhost:3000", "http://localhost:5173"],
+        methods=["GET", "POST", "PUT", "DELETE"],
+    ),
+    "/api/your_new_route": Rule(
+        origins=[..."your_allowed_origins"],
+        methods=[..."your_allowed_methods"]
+    )
 }
 ```
 

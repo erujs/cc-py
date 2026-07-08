@@ -13,6 +13,7 @@ import json
 from pathlib import Path
 from fastapi import HTTPException
 
+
 DATA_DIR = Path(__file__).parent.parent.parent / "data"
 
 

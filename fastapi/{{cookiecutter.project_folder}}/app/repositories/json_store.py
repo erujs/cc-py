@@ -15,13 +15,18 @@ from fastapi import HTTPException
 
 DATA_DIR = Path(__file__).parent.parent.parent / "data"
 
+
+def data_exists(filename: str) -> bool:
+    return (DATA_DIR / filename).exists()
+
+
 def load_json(filename: str) -> dict | list:
     file_path = DATA_DIR / filename
 
     if not file_path.exists():
         raise HTTPException(
             status_code=404,
-            detail={"code": "NotFound", "message": "Requested data is not available"},
+            detail="Requested data is not available",
         )
 
     try:
@@ -30,5 +35,5 @@ def load_json(filename: str) -> dict | list:
     except Exception as exc:
         raise HTTPException(
             status_code=500,
-            detail={"code": "InternalError", "message": "Unexpected error occurred"},
+            detail="Unexpected error occurred",
         ) from exc

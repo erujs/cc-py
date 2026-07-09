@@ -4,10 +4,10 @@ from app.routers import example
 from app.core.cors_middleware import PerPrefixCORSMiddleware
 
 
-app.add_middleware(PerPrefixCORSMiddleware)
-
-
 app = FastAPI(title="{{ cookiecutter.project_name }}", version="1.0.0")
+
+
+app.add_middleware(PerPrefixCORSMiddleware)
 
 
 app.include_router(example.router)

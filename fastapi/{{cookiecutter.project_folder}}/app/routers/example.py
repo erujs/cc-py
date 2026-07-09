@@ -3,10 +3,10 @@ from app.schemas.example import Example
 from app.repositories.json_store import load_json, data_exists
 
 
-router = APIRouter(prefix="/api/example", tags=["example"])
+router = APIRouter(prefix="/api/example", tags=["example"], redirect_slashes=False)
 
 
-@router.get("/", response_model=list[Example])
+@router.get("", response_model=list[Example])
 def get_examples(request: Request):
     if not data_exists("example.json"):
         raise HTTPException(status_code=404, detail="Requested data is not available")
